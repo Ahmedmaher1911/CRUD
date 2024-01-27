@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="contant bg-warning-subtle m-5 p-5">
+      <label for="productNameInput" class="form-label">Product name</label>
+      <input type="text" id="productNameInput" class="form-control" />
+      <hr />
+      <label for="productPriceInput" class="form-label">Product price</label>
+      <input type="number" id="productPriceInput" class="form-control" />
+      <hr />
+      <label for="productCategoryInput" class="form-label"
+        >Product Category</label
+      >
+      <input type="text" id="productCategoryInput" class="form-control" />
+
+
+      <label for="productDescInput" class="form-label">Product description</label>
+      <textarea type="text" id="productDescInput" class="form-control"></textarea>
+
+      
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button onclick="addProduct()"  class="btn btn-primary" type="button">Add product</button>
+      </div>
+      <hr>
+       <label for="ProductSearch" class="form-label ">Search</label>
+       <input oninput="searchProduct(this.value)"  type="text" id="ProductSearch" class="form-control">
+
+       <div class="w-75 mx-auto py-5  ">
+    <table class="table text-center ">
+        <thead>
+          
+            <th>index</th>
+            <th >Name</th>
+            <th >Price</th>
+            <th >Category</th>
+            <th >Description</th>
+            <th >Delete</th>
+            <th >Update</th>
+
+          
+        </thead>
+        <tbody  id="tableBody">
+      
+          
+        </tbody>
+
+</table>
+
+
+
+
+      
+ </div>
+ </div>
+
+
+
+
+     
+ 
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
